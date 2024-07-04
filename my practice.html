@@ -13,61 +13,16 @@
       rel="stylesheet"
     />
     <style>
-      body {
-        font-family: "Poppins", sans-serif;
+      #about-me-img {
+        width: 250px;
+        height: 250px;
+        border-radius: 20px;
+        margin-right: 5%;
       }
-      .header {
-        background: linear-gradient(
-            to bottom,
-            rgba(0, 0, 0, 0.5),
-            rgba(0, 0, 0, 0.5)
-          ),
-          url("header-bg.jpg") no-repeat center center/cover;
-        color: white;
-        padding: 30px 0;
-        text-align: center;
-      }
-      .header h1 {
-        font-size: 2.5rem;
-        margin-bottom: 0.5rem;
-        margin-top: 1rem;
-      }
-      .header p {
-        font-size: 1.25rem;
-        margin-top: 1.5 rem;
-      }
-      .navbar-nav .nav-link {
-        font-size: 1.1rem;
-        text-transform: capitalize;
-        padding: 0.75rem 1rem;
-      }
-      .navbar-nav .nav-link:hover {
-        background-color: #495057;
-        border-radius: 0.25rem;
-       
-      }
-      .section {
-        padding: 70px 0;
-      }
-      .about-me {
-            display: flex;
-            align-items: center;
-            text-align: left;
-            margin-top: 50px;
-        }
-        .about-me img {
-            width: 250px;
-            height: 250px;
-            border-radius: 20px;
-            margin-right: 5%;
-           
-        }
-        .about-me-text {
-            text-align: justify;
-            text-wrap:pretty;
-            text-decoration: line-through;
-            flex-grow: 1;
-        }
+
+      .bg-light-grey {
+      background-color: #f7f7f7; /* Very light grey */
+    }
 
       .footer {
         background-color: #343a40;
@@ -79,7 +34,7 @@
   </head>
   <body>
     <!-- Header -->
-    <div class="header">
+    <div class="container-fluid bg-secondary text-center p-4">
       <h1>Welcome to My Portfolio</h1>
       <p>Showcasing my work and projects</p>
     </div>
@@ -107,41 +62,87 @@
       </div>
     </nav>
 
-    <!-- Content Sections -->
-    <div class="container section" id="about">
-      <div class="about-me">
-                  <img src="about me pic.jpg" alt="Your Picture"  />
-          <div class="about-me-text"></div>
-          <h2></h2>
-              <p>
-            Motivated professional with a background in business administration,
-            project management, and recent training in Fullstack development.
-            Experienced in financial analysis, contract management, and project
-            coordination. Experienced in frontend, backend development, and
-            database management, with the ability to work with Java, Spring,
-            Spring Boot, ReactJS, Bootstrap, etc. Eager to leverage diverse
-            experience and technical skills as a Junior Fullstack Developer.
-          </p>
+    <!-- Start Content -->
+    <main>
+      <!-- Start About -->
+      <div class="container">
+        <div class="row py-3">
+          <h2 class="text-center">About Me</h2>
+          <div class="col-sm-4">
+            <img
+              id="about-me-img"
+              src="/images/about-me-pic.jpg"
+              alt="Your Picture"
+              class="rounded-circle"
+            />
+          </div>
+          <div class="col-sm-8 justify-content-center">
+            <p class="text-align pt-5 fs-6">
+              Motivated professional with a background in business
+              administration, project management, and recent training in
+              Fullstack development. Experienced in financial analysis, contract
+              management, and project coordination. Experienced in frontend,
+              backend development, and database management, with the ability to
+              work with Java, Spring, Spring Boot, ReactJS, Bootstrap, etc.
+              Eager to leverage diverse experience and technical skills as a
+              Junior Fullstack Developer.
+            </p>
+          </div>
         </div>
-        <div class="container mt-3"></div>
       </div>
-      <div class="section" id="work-experience">
-        <h2>Work Experience</h2>
-        <p>Detail your professional experience.</p>
+      <!-- End About -->
+
+      <!-- Start Experience -->
+      <div class="container">
+        <h2 class="text-center">Work Experience</h2>
+        <div class="row py-5">
+          <!-- Row 1 -->
+          <div class="col-sm-6 bg-light-grey">
+            <p class="pt-5 fs-6 ">Job Title 1:</p>
+          </div>
+          <div class="col-sm-6 bg-light-grey">
+            <p class="pt-5 fs-6">Job Title 2:</p>
+          </div>
+          <!-- Row 2 -->
+          <div class="col-sm-6 bg-light-grey">
+            <p class="pt-1 fs-6">Company Name</p>
+          </div>
+          <div class="col-sm-6 bg-light-grey">
+            <p class="pt-1 fs-6">Company Name</p>
+          </div>
+          <!-- Row 3 -->
+          <div class="col-sm-6 bg-light-grey">
+            <p class="pt-1 fs-6">Job Description</p>
+          </div>
+          <div class="col-sm-6 bg-light-grey">
+            <p class="pt-1 fs-6">Job Description </p>
+          </div>
+          <!-- Row 4 -->
+          <div class="col-sm-6 bg-light-grey">
+            <p class="pt-5 fs-6">Job Title 3:</p>
+          </div>
+          <div class="col-sm-6 bg-light-grey">
+            <p class="pt-5 fs-6">Job Title 4:</p>
+          </div>
+          <!-- Row 5 -->
+          <div class="col-sm-6 bg-light-grey">
+            <p class="pt-1 fs-6">Company Name</p>
+          </div>
+          <div class="col-sm-6 bg-light-grey">
+            <p class="pt-1 fs-6">Company Name</p>
+          </div>
+          <!-- Row 6 -->
+          <div class="col-sm-6 bg-light-grey">
+            <p class="pt-1 fs-6">Job Description</p>
+          </div>
+          <div class="col-sm-6 bg-light-grey">
+            <p class="pt-1 fs-6">Job Description</p>
+          </div>
+        </div>
       </div>
-      <div class="section" id="skills">
-        <h2>Skills</h2>
-        <p>List your skills and proficiencies.</p>
-      </div>
-      <div class="section" id="projects">
-        <h2>Projects</h2>
-        <p>Showcase your past projects.</p>
-      </div>
-      <div class="section" id="contact">
-        <h2>Contact</h2>
-        <p>Provide contact information or a form.</p>
-      </div>
-    </div>
+      <!-- Start Experience -->
+    </main>
+    <!-- End Content -->
 
     <!-- Footer -->
     <div class="footer">
